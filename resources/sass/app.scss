@@ -1,0 +1,97 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Menú
+.nav {
+  margin-top: 3%;
+}
+.nav-link {
+  color: $light-green;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.06;
+  letter-spacing: 9px;
+}
+.nav-item-text {
+  margin-top: 40px;
+  width: 15%;
+}
+
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.4;
+  z-index: 1;
+}
+
+.video-border {
+  border-radius: 8px;
+  border: solid 1.5px $green;
+  height: 40vh; 
+  position: relative;
+  top: 35px;
+  margin: auto;
+  width: 85%;
+}
+
+.text-home {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 30px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: 4.5px;
+  text-align: center;
+  color: $dark-green;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
+}
