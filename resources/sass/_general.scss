@@ -9,6 +9,7 @@ body {
     color: #898469;
     font-family: "Libre Baskerville", serif;
     font-size: 14px;
+    height: 100vh!important;
 }
 
 a {
@@ -149,7 +150,7 @@ footer {
         p {
             line-height: 1.15;
             letter-spacing: 4.1px;
-            padding-top: 130px;
+            padding-top: 110px;
         }
     }
 }
@@ -219,4 +220,33 @@ footer {
     .sidenav a {
         font-size: 18px;
     }
+}
+
+
+
+.contenedor {
+	margin: auto;
+	display: table;
+}
+
+h1 { 
+	position: relative; 
+	float: left;
+	background: tomato;
+	color: #fff;
+	font-size: 2.5em;
+}
+
+h1 span {
+    position:absolute;
+    right:0;
+    width:0;
+    background: tomato;
+    border-left: 1px solid #000;
+    animation: escribir 5s steps(30) infinite alternate;
+}
+
+@keyframes escribir {
+    from { width: 100% }
+    to { width:0 }
 }

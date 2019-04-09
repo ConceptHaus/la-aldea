@@ -5,14 +5,14 @@
     <div class="container h-100">
         <div class="container-border text-center">
             <h5 class="color-white">GALERÍA</h5>
-            <p><img src="{{asset('img/isotipo-aldea.png')}}" class="mb-3" width="40"></p>
+            <p><img src="{{asset('img/aldea.gif')}}" class="mb-3" width="30"></p>
         </div>
         
     </div>
 </section>
 
 <section class="mt-5 pt-5">
-    <div class="container-text pl-5">
+    <div class="container-text pl-5" data-0="opacity: 0.2; margin-left: -50%;" data-300="opacity: 1; margin-left: 0%;">
         <p class="lead text-muted text-principal text-left">
             Es el único lugar donde la naturaleza marca el diseño de cada rincón, por eso
             nos especializamos en crear escenarios para que ningún evento sea igual,
@@ -29,8 +29,8 @@
             </div>
         </div>
 
-        <div class="col-md-7 p-0">
-            <div id='carousel-custom' class='carousel slide' data-ride='carousel'>
+        <div class="col-md-7 p-0" >
+            <div id='carousel-custom' class='carousel slide' data-ride='carousel' data-100="opacity: 0.2; margin-right: -120px;" data-300="opacity: 1; margin-right: 20px;">
                 <div class='carousel-inner'>
                     <div class='carousel-item active'>
                         <img src="{{asset('img/galeria/1.jpg')}}" class="img-fluid" />

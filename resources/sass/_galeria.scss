@@ -3,6 +3,11 @@
 GALERÍA
 
 =============================*/
+
+.container-galeria {
+    overflow: hidden;
+}
+
 .container-galeria-text {
     .text-experiencia {
         background: $container-green;

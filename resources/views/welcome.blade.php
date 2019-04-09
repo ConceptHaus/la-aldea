@@ -11,11 +11,13 @@
         </div>
     </header>
 
-    <section class="jumbotron text-center">
+    <section class="jumbotron descripcion-home text-center">
         <div class="container container-text">
-            <img src="{{asset('img/isotipo-aldea.png')}}" class="mb-3" width="40">
-            <p class="lead text-muted text-principal">La Aldea fue creada pensando en lo que tú
-                necesitas para hacer de tu evento una
+            <img src="{{asset('img/aldea.gif')}}" class="mb-3" width="30">
+            <p class="lead text-muted text-principal" 
+                data-0="position: relative; opacity: 0.2; top: 20px;" 
+                data-300="position: relative; opacity: 1; top: 0px;">
+                La Aldea fue creada pensando en lo que tú necesitas para hacer de tu evento una
                 <span>experiencia inigualable.</span>
             </p>
         </div>
@@ -24,54 +26,46 @@
     <section id="contacto-home">
         <div class="row">
             <div class="col-md-6">
-                <img src="{{asset('img/elementos/elemento1.svg')}}" class="img-hoja img1">
+                <img src="{{asset('img/elementos/elemento1.svg')}}" class="img-hoja img1" data-0="left: -20px; top: -150px;" data-500="left: 50px; top: -5px;">
                 <div class="content-contacto-left">
-                    <div class="content-textos center-middle-table pt-5">
+                    <div class="content-textos center-middle-table pt-5" data-300="opacity: 0;" data-700="opacity: 1;">
                         <p class="texto1">¿Quieres más informes ó deseas alguna cotización? </p>
                         <p class="texto2">Escríbenos.</p>
                     </div>
                 </div>
-                <img src="{{asset('img/elementos/elemento2.svg')}}" class="img-hoja img2">
+                <img src="{{asset('img/elementos/elemento2.svg')}}" class="img-hoja img2" data-0="right: -30px; bottom: -150px;" data-700="right: 50px; bottom: -5px;">
             </div>
             <div class="col-md-6">
-                <form action="https://laaldea.kiper.io/api/v1/forms/register?token=r5qDTeMwN112O7q12xOx2uJ6r77D9l51" method ="POST">
+                <form action="https://laaldea.kiper.io/api/v1/forms/register?token=r5qDTeMwN112O7q12xOx2uJ6r77D9l51" method ="POST" data-300="opacity: 0;" data-700="opacity: 1;">
+
+                    <input type="text" id="utm_campaign" name="utm_campaign" hidden>
+                    <input type="text" id="utm_term" name="utm_term" hidden>
+
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
                         </div>
                         <div class="form-group col-md-6">
-                            <input type="email" class="form-control" id="correo" placeholder="Correo Electrónico">
+                            <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellido">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <input type="text" class="form-control" id="telefono" placeholder="Teléfono">
+                            <input type="email" class="form-control" id="correo" name="correo" placeholder="Correo Electrónico">
                         </div>
                         <div class="form-group col-md-6">
-                            <input type="text" class="form-control" id="origen" placeholder="Ciudad de origen">
+                            <input type="text" class="form-control" id="telefono" name="telefono" placeholder="Teléfono">
                         </div>
                     </div>
+
                     <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <!-- <input type="text" class="form-control" id="telefono" placeholder="Teléfono"> -->
-                            <select class="form-control">
-                                <option value="">Tipo de Evento</option>
-                                <option value="Boda">Boda</option>
-                                <option value="XV años">XV años</option>
-                                <option value="Bautizos">Bautizos</option>
-                                <option value="Graduación">Graduación</option>
-                                <option value="Evento corporativo">Evento corporativo</option>
-                                <option value="Exposición">Exposición</option>
-                                <option value="Evento masivo">Evento masivo</option>
-                            </select>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <input type="date" class="form-control" id="start" name="trip-start" value="">
-                            <!-- min="2018-01-01" max="2018-12-31" -->
+                        <div class="form-group col-md-12">
+                            <input type="text" class="form-control" id="empresa" name="empresa" placeholder="Empresa">
                         </div>
                     </div>
+
                     <div class="form-group">
-                        <textarea class="form-control" id="mensaje" rows="6" placeholder="Mensaje"></textarea>
+                        <textarea class="form-control" id="mensaje" name="mensaje" rows="6" placeholder="Mensaje"></textarea>
                     </div>
                     <div class="text-center">
                         <button type="submit" class="btn btn-enviar">Enviar</button>
