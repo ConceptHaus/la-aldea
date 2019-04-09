@@ -11,6 +11,8 @@
 
     <!-- CSS  -->
     <link href="{{asset('css/app.css')}}" rel="stylesheet" />
+    <link href="{{asset('css/animate.css')}}" rel="stylesheet" />
+    
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700" rel="stylesheet">
 </head>
 
@@ -27,7 +29,8 @@
         <img src="{{asset('img/isotipo-aldea.png')}}" class="img-isotipo mb-3" width="40">
     </div>
 
-    <ul class="nav justify-content-center">
+    <ul class="nav justify-content-center wow slideInDown" data-wow-duration="1.5s">
+        <!-- data-wow-delay="5s" -->
         <li class="nav-item nav-item-text">
             @if(Request::path() === '/')
                 <a class="nav-link active" href="{{url('/')}}">NOSOTROS</a>
@@ -89,10 +92,20 @@
         </div>
     </footer>
 
-
+    <!-- JS -->
     <script type="text/javascript" src="{{asset('js/jquery-3.3.1.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('bootstrap/js/bootstrap.bundle.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('bootstrap/js/bootstrap.min.js')}}"></script>
+    <!-- Wow - Animaciones -->
+    <script type="text/javascript" src="{{asset('js/wow.min.js')}}"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!-- Skrollr - Animaciones -->
+    <script type="text/javascript" src="{{asset('js/skrollr.min.js')}}"></script>
+    <script type="text/javascript">
+	    var s = skrollr.init();
+	</script>
 
     <script>
         function openNav() {

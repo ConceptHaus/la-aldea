@@ -10773,6 +10773,10 @@ header .overlay {
   background: #e2dcca;
 }
 
+.descripcion-home {
+  overflow: hidden;
+}
+
 .img-hoja {
   position: absolute;
   opacity: 0.7;
@@ -10858,6 +10862,7 @@ body {
   color: #898469;
   font-family: "Libre Baskerville", serif;
   font-size: 14px;
+  height: 100vh !important;
 }
 
 a {
@@ -11010,7 +11015,7 @@ footer .col-md-4 {
 .seccion-header .container-border p {
   line-height: 1.15;
   letter-spacing: 4.1px;
-  padding-top: 130px;
+  padding-top: 110px;
 }
 
 .header-servicios {
@@ -11077,11 +11082,58 @@ footer .col-md-4 {
   }
 }
 
+.contenedor {
+  margin: auto;
+  display: table;
+}
+
+h1 {
+  position: relative;
+  float: left;
+  background: tomato;
+  color: #fff;
+  font-size: 2.5em;
+}
+
+h1 span {
+  position: absolute;
+  right: 0;
+  width: 0;
+  background: tomato;
+  border-left: 1px solid #000;
+  -webkit-animation: escribir 5s steps(30) infinite alternate;
+          animation: escribir 5s steps(30) infinite alternate;
+}
+
+@-webkit-keyframes escribir {
+  from {
+    width: 100%;
+  }
+
+  to {
+    width: 0;
+  }
+}
+
+@keyframes escribir {
+  from {
+    width: 100%;
+  }
+
+  to {
+    width: 0;
+  }
+}
+
 /* =============================
 
 GALERÍA
 
 =============================*/
+
+.container-galeria {
+  overflow: hidden;
+}
 
 .container-galeria-text .text-experiencia {
   background: #e2dcca;

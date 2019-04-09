@@ -120,9 +120,13 @@ header {
     .form-control {
       background: $container-green;
     }
-  }
-  
+  }  
 }
+
+.descripcion-home {
+  overflow: hidden;
+}
+
 
 .img-hoja {
   position: absolute;
