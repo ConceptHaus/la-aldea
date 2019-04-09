@@ -1,0 +1,110 @@
+/* =============================
+
+RESPONSIVE
+
+=============================*/
+
+@include media-breakpoint-down(md) {
+    // Home
+    footer {
+        // background: blue!important;
+    }
+
+    // Generales
+    .btn-responsive {
+        display: block!important;
+    }
+    .nav-item-text {
+        display: none;
+    }
+
+    // Servicios
+    .container-servicios {
+        .servicio-imagen {
+            height: 50vh!important;
+            margin-bottom: 5%;
+            margin-right: 5%;
+        }
+    }
+
+    // Contacto
+    .seccion-contacto {
+        width: 700px;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+
+    // Generales
+    footer {
+        // background: red!important;
+    }
+    // Home
+    header {
+        height: 65vh;
+    }
+    #contacto-home {
+        .content-contacto-left {
+            width: 90%!important;
+        }
+    }
+    #contacto-home {
+        form {
+            padding-top: 0px;
+        }
+    }
+
+    // Galería
+    .container-galeria-text {
+        .text-experiencia {
+            margin:auto;
+            right: inherit;
+            padding-top: 5vh !important;
+            width: 90%;
+        }
+    }
+    .container-text {
+        margin: auto;
+        padding-left: 0!important;
+        width: 90%!important;
+    }
+
+    .container-text-big,
+    .container-pleca p {
+        width: 90%!important;
+    }
+
+    // Contacto
+    .seccion-contacto {
+        width: 90%;
+    }
+
+    // Footer
+    footer {
+        .col-md-4 {
+            height: 0!important;
+            margin-top: 10px;
+            text-align: center!important;
+        }
+        .copyright {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+@include media-breakpoint-down(xs) {
+    // Generales
+    footer {
+        // background: green!important;
+    }
+    .container-info {
+        width: 90%;
+    }
+    // Servicios
+    // .container-servicios {
+    //     .servicio-imagen {
+    //         height: 100vh!important;
+    //         margin-bottom: 5%;
+    //     }
+    // }
+}

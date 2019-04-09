@@ -1,0 +1,51 @@
+/* =============================
+
+GALERÍA
+
+=============================*/
+.container-galeria-text {
+    .text-experiencia {
+        background: $container-green;
+        padding-top: 50vh !important;
+        position: relative;
+        right: -70px;
+        margin-top: 23%;
+    }
+}
+
+
+/* CAROUSEL */
+#carousel-custom {
+    margin: 20px auto;
+    width: 90%;
+    .carousel-indicators {
+        margin: 10px 0 0;
+        overflow: auto;
+        position: static;
+        text-align: left;
+        white-space: nowrap;
+        width: 100%;
+        li {
+            background-color: transparent;
+            -webkit-border-radius: 0;
+            border-radius: 0;
+            display: inline-block;
+            height: auto;
+            margin: 0 !important;
+            width: auto;
+            img {
+                display: block;
+                // opacity: 0.5;
+                width: 90px !important;
+            }
+            &:active {
+                img {
+                    // opacity: 1;
+                }
+            }
+            &:hover {
+                // opacity: 0.75;
+            }
+        }
+    }
+}

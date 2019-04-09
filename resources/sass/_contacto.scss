@@ -1,0 +1,27 @@
+/* =============================
+
+CONTACTO
+
+=============================*/
+
+.seccion-contacto {
+    margin: auto;
+    width: 800px;
+    .btn-enviar {
+        background: $container-green;
+        color: $dark-green;
+    }
+    .form-control {
+        color: #a9a281;
+        font-style: normal;
+    }
+    .form-control-input {
+        height: 50px;
+    }
+}
+
+.container-info {
+    color: $dark-grey;
+    margin: auto;
+    width: 300px;
+}

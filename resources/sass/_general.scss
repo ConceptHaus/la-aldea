@@ -1,0 +1,222 @@
+/* =============================
+
+GENERALES
+
+=============================*/
+
+body {
+    background: #FFF;
+    color: #898469;
+    font-family: "Libre Baskerville", serif;
+    font-size: 14px;
+}
+
+a {
+    color: $dark-grey;
+    &:hover {
+        text-decoration: none;
+        color: $dark-green;
+    }
+}
+
+.center-middle-table {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.row {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+.divider {
+    box-shadow: 0 -3px 6px 0 rgba(0, 0, 0, 0.16);
+    border: solid .5px rgba(112, 112, 112, 0.2);
+}
+
+// COLORES
+.color-gray {
+    color: #7c7d80;
+}
+
+.color-white {
+    color: $white;
+}
+
+// BOTONES
+.btn-enviar {
+    border-radius: 32px;
+    padding: 7px 35px;
+}
+
+.btn-responsive {
+    cursor: pointer;
+    color: $white;
+    display: none;
+    font-size: 26px;
+    position: absolute;
+    right: 40px;
+    top: 20px;
+}
+
+// FORM
+.form-control {
+    background: transparent;
+    border-radius: 8px;
+    border: solid 1px #898469;
+    color: #898469;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.form-control::placeholder {
+    color: #898469;
+}
+
+// MENU
+.nav {
+    margin-top: 1%;
+    position: absolute;
+    width: 100%;
+    z-index: 9999;
+}
+
+.nav-link {
+    color: $light-green;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 1.05;
+    letter-spacing: 9px;
+    &:hover, &:focus {
+        color: $green!important;
+    }
+}
+
+.nav-link.active {
+    color: $white!important;
+    position: relative;
+    &:before{
+        content: "";
+        border: solid 1px $light-green;
+        display: inline-block;
+        left: 25%;
+        position: absolute;
+        transform: translateY(-1rem);
+        width: 40%;
+       
+    }
+}
+
+.nav-item-text {
+    margin-top: 40px;
+    width: 170px;
+}
+
+// FOOTER
+footer {
+    overflow: hidden;
+
+    .col-md-4 {
+        display: table;
+        height: 60px;
+    }
+}
+
+// CONTACTO
+.seccion-header {
+    background-size: cover !important;
+    background-position: center !important;
+    height: 370px;
+    margin-bottom: 160px;
+
+    .container-border {
+        border-radius: 8px;
+        border: solid 1.5px $green;
+        height: 40vh;
+        position: relative;
+        top: 170px;
+        margin: auto;
+        width: 85%;
+
+        h5 {
+            line-height: 2.06;
+            letter-spacing: 14px;
+            padding-top: 70px;
+        }
+
+        p {
+            line-height: 1.15;
+            letter-spacing: 4.1px;
+            padding-top: 130px;
+        }
+    }
+}
+
+.header-servicios {
+    background: url('../../public/img/backgrounds/background-servicios.png');
+}
+
+.header-galeria {
+    background: url('../../public/img/backgrounds/background-galeria.png');
+}
+
+.header-contacto {
+    background: url('../../public/img/backgrounds/background-contacto.png');
+}
+
+
+
+// SIDENAV
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: $dark-green;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 99999;
+
+    a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 14px;
+        color: $white;
+        display: block;
+        transition: 0.3s;
+
+        &:hover {
+            color: #f1f1f1;
+        }
+    }
+
+    .closebtn {
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    .img-isotipo {
+        position: absolute;
+        bottom: 0;
+        right: 35px;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}

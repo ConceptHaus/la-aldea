@@ -14,3 +14,15 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/servicios', function () {
+    return view('servicios');
+});
+
+Route::get('/galeria', function () {
+    return view('galeria');
+});
+
+Route::get('/contacto', function () {
+    return view('contacto');
+});

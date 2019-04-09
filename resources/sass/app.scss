@@ -8,22 +8,9 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
-// Menú
-.nav {
-  margin-top: 3%;
-}
-.nav-link {
-  color: $light-green;
-  font-family: 'Libre Baskerville', serif;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 1.06;
-  letter-spacing: 9px;
-}
-.nav-item-text {
-  margin-top: 40px;
-  width: 15%;
-}
+
+
+// GENERALES
 
 header {
   position: relative;
@@ -32,37 +19,37 @@ header {
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
-}
-
-header video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: 0;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-}
-
-header .container {
-  position: relative;
-  z-index: 2;
-}
-
-header .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: black;
-  opacity: 0.4;
-  z-index: 1;
+  video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  .container {
+    position: relative;
+    top: 130px;
+    z-index: 2;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    // background: linear-gradient(rgba(78,75,54,1), rgba(47,45,44,0.1));
+    background: linear-gradient(#4E4B36, #2F2D2C);
+    // background-color: black;
+    opacity: .4;
+    z-index: 1;
+  }
 }
 
 .video-border {
@@ -75,17 +62,130 @@ header .overlay {
   width: 85%;
 }
 
-.text-home {
-  font-family: 'Libre Baskerville', serif;
-  font-size: 30px;
+.container-text {
+  width: 500px;
+}
+
+.container-text-big {
+  width: 560px;
+}
+
+.jumbotron {
+  background: #FFF;
+  margin-bottom: 0;
+}
+
+.text-principal {
+  font-size: 14px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.5;
   letter-spacing: 4.5px;
   text-align: center;
-  color: $dark-green;
+  color: $dark-green!important;
+  span {
+    font-style: italic;
+    font-weight: 700;
+  }
 }
+
+// CONTACTO 
+#contacto-home {
+  background: $container-green;
+  overflow: hidden;
+  .content-contacto-left {
+    display: table; 
+    height: 370px;
+    margin: auto;
+    width: 500px;
+  }
+  .texto1, .texto2 {
+    line-height: 1.2;
+    letter-spacing: 7.5px;
+  }
+  .texto1 {
+    font-size: 18px;
+  }
+  .texto2 {
+    font-size: 12px;
+    font-weight: 700;
+  }
+  form {
+    padding: 7%;
+    .btn-enviar {
+      border: solid 2px #efece2;
+      color: #efece2;
+    }
+    .form-control {
+      background: $container-green;
+    }
+  }
+  
+}
+
+.img-hoja {
+  position: absolute;
+  opacity: .7;
+  width: 120px;
+}
+
+.img-hoja.img1 {
+  left: 50px;
+  top: -5px;
+}
+.img-hoja.img2 {
+  right: 50px;
+  bottom: -5px;
+}
+
+
+// PLECA
+.container-pleca {
+  background: $container-green;
+  position: relative;
+  overflow: hidden;
+  p {
+    font-size: 18px;
+    line-height: 1.14;
+    letter-spacing: 4px;
+    margin: auto;
+    width: 600px;
+    span {
+      font-weight: bold;
+      font-style: italic;
+    }
+  }
+  .img-hoja {
+    bottom: -25px;
+    width: 100px;
+  }
+}
+
+// SERVICIOS
+.container-servicios {
+  padding-left: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  .servicio-imagen {
+    background: url('../../public/img/elementos/img-servicios.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .servicio-descripcion {
+    h2 {
+      color: $light-green;
+    }
+    p {
+      color: $darker-green;
+      font-size: 11px;
+      line-height: 1.45;
+      letter-spacing: 4px;
+    }
+  }
+} 
+
 
 @media (pointer: coarse) and (hover: none) {
   header {
@@ -95,3 +195,9 @@ header .overlay {
     display: none;
   }
 }
+
+// General
+@import 'general';
+@import 'galeria';
+@import 'contacto';
+@import 'responsive';
