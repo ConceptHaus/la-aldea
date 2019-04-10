@@ -12,11 +12,13 @@
     <!-- CSS  -->
     <link href="{{asset('css/app.css')}}" rel="stylesheet" />
     <link href="{{asset('css/animate.css')}}" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.11.4/sweetalert2.min.css">
     
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700" rel="stylesheet">
 </head>
 
-<body>
+<body ng-app="app">
     <div id="mySidenav" class="sidenav text-center">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="{{url('/')}}" class="mb-5">
@@ -67,35 +69,59 @@
         <span class="btn-responsive" onclick="openNav()">&#9776;</span>
     </ul>
 
-    @yield('content')
+    <section ng-controller="ContactoController as contacto">
+        @yield('content')
+    </section>
 
-    <div class="divider"></div>
-    <footer class="px-3">
-        <div class="row">
-            <div class="col-xs-12 col-md-4">
-                <div class="center-middle-table">
-                    <a><img src="{{asset('img/iconos/facebook.svg')}}" class="mr-2" width="18"></a>
-                    <a><img src="{{asset('img/iconos/instagram.svg')}}" width="18"></a>
+    @if(Request::path() === 'gracias')
+    <div style="position: fixed; bottom: 0; width: 100%;">
+    @endif
+        <div class="divider"></div>
+        <footer class="px-3">
+            <div class="row">
+                <div class="col-xs-12 col-md-4">
+                    <div class="center-middle-table">
+                        <a><img src="{{asset('img/iconos/facebook.svg')}}" class="mr-2" width="18"></a>
+                        <a><img src="{{asset('img/iconos/instagram.svg')}}" width="18"></a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4 text-center">
+                    <div class="center-middle-table color-gray">
+                        LaAldea©2019
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4 text-right copyright">
+                    <div class="center-middle-table">
+                        <a href="https://concepthaus.mx" target="_blank"><img src="{{asset('img/logo-concepthaus.svg')}}"
+                                width="120"></a>
+                    </div>
                 </div>
             </div>
-            <div class="col-xs-12 col-md-4 text-center">
-                <div class="center-middle-table color-gray">
-                    LaAldea©2019
-                </div>
-            </div>
-            <div class="col-xs-12 col-md-4 text-right copyright">
-                <div class="center-middle-table">
-                    <a href="https://concepthaus.mx" target="_blank"><img src="{{asset('img/logo-concepthaus.svg')}}"
-                            width="120"></a>
-                </div>
-            </div>
+        </footer>
+    @if(Request::path() === 'gracias')
         </div>
-    </footer>
+    @endif
 
     <!-- JS -->
     <script type="text/javascript" src="{{asset('js/jquery-3.3.1.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('bootstrap/js/bootstrap.bundle.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('bootstrap/js/bootstrap.min.js')}}"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.11.4/sweetalert2.min.js"></script>
+
+    <!-- Angular -->
+    <script src="https://code.angularjs.org/1.4.0/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-resource/1.3.15/angular-resource.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-messages.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-route.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-cookies.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.11.4/sweetalert2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/danialfarid-angular-file-upload/12.2.13/ng-file-upload.min.js"></script>
+
+    <script src="{{asset('js/angular-app/angular-app.js')}}"></script>
+    <script src="{{asset('js/angular-app/controllers/ContactoController.js')}}"></script>
+    <script src="{{asset('js/angular-app/services/ContactoService.js')}}"></script>
+
     <!-- Wow - Animaciones -->
     <script type="text/javascript" src="{{asset('js/wow.min.js')}}"></script>
     <script>
