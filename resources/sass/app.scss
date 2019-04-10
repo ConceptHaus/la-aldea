@@ -70,6 +70,10 @@ header {
   width: 560px;
 }
 
+.content-textos {
+  padding-top: 8rem !important;
+}
+
 .jumbotron {
   background: #FFF;
   margin-bottom: 0;
@@ -80,7 +84,7 @@ header {
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.5;
+  line-height: 2;
   letter-spacing: 4.5px;
   text-align: center;
   color: $dark-green!important;
@@ -109,6 +113,7 @@ header {
   }
   .texto2 {
     font-size: 12px;
+    font-style: italic;
     font-weight: 700;
   }
   form {
@@ -151,7 +156,7 @@ header {
   overflow: hidden;
   p {
     font-size: 18px;
-    line-height: 1.14;
+    line-height: 1.5;
     letter-spacing: 4px;
     margin: auto;
     width: 600px;
