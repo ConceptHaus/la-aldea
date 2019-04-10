@@ -9,7 +9,6 @@ body {
     color: #898469;
     font-family: "Libre Baskerville", serif;
     font-size: 14px;
-    height: 100vh!important;
 }
 
 a {
@@ -250,4 +249,12 @@ h1 span {
 @keyframes escribir {
     from { width: 100% }
     to { width:0 }
+}
+
+
+// Skrollr
+#skrollr-body {
+    float: left;
+    width: 100%;
+    height: 100%;
 }

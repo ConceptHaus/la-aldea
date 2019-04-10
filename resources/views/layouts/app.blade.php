@@ -18,7 +18,7 @@
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700" rel="stylesheet">
 </head>
 
-<body ng-app="app">
+<body ng-app="app" id="skrollr-body">
     <div id="mySidenav" class="sidenav text-center">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="{{url('/')}}" class="mb-5">
