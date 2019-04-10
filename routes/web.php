@@ -26,3 +26,11 @@ Route::get('/galeria', function () {
 Route::get('/contacto', function () {
     return view('contacto');
 });
+
+
+Route::get('/gracias', function () {
+    return view('gracias');
+});
+
+// Guardar datos formulario de contacto
+Route::post('/saveContacto','WelcomeController@saveDataContacto');

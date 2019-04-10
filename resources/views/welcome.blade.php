@@ -36,39 +36,36 @@
                 <img src="{{asset('img/elementos/elemento2.svg')}}" class="img-hoja img2" data-0="right: -30px; bottom: -150px;" data-700="right: 50px; bottom: -5px;">
             </div>
             <div class="col-md-6">
-                <form action="https://laaldea.kiper.io/api/v1/forms/register?token=r5qDTeMwN112O7q12xOx2uJ6r77D9l51" method ="POST" data-300="opacity: 0;" data-700="opacity: 1;">
-
-                    <input type="text" id="utm_campaign" name="utm_campaign" hidden>
-                    <input type="text" id="utm_term" name="utm_term" hidden>
-
+                <form id="contactoForm" name="contactoForm" data-300="opacity: 0;" data-700="opacity: 1;">
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
+                            <input type="text" class="form-control" id="nombre" name="nombre" ng-model="contacto.nombre" placeholder="Nombre">
                         </div>
                         <div class="form-group col-md-6">
-                            <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellido">
+                            <input type="text" class="form-control" id="apellido" name="apellido" ng-model="contacto.apellido" placeholder="Apellido">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <input type="email" class="form-control" id="correo" name="correo" placeholder="Correo Electrónico">
+                            <input type="email" class="form-control" id="correo" name="correo" ng-model="contacto.correo" placeholder="Correo Electrónico">
                         </div>
                         <div class="form-group col-md-6">
-                            <input type="text" class="form-control" id="telefono" name="telefono" placeholder="Teléfono">
+                            <input type="text" class="form-control" id="telefono" name="telefono" ng-model="contacto.telefono"  placeholder="Teléfono">
                         </div>
                     </div>
 
                     <div class="form-row">
                         <div class="form-group col-md-12">
-                            <input type="text" class="form-control" id="empresa" name="empresa" placeholder="Empresa">
+                            <input type="text" class="form-control" id="empresa" name="empresa" ng-model="contacto.empresa" placeholder="Empresa">
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <textarea class="form-control" id="mensaje" name="mensaje" rows="6" placeholder="Mensaje"></textarea>
+                        <textarea class="form-control" id="mensaje" name="mensaje" rows="6" ng-model="contacto.mensaje" placeholder="Mensaje"></textarea>
                     </div>
+
                     <div class="text-center">
-                        <button type="submit" class="btn btn-enviar">Enviar</button>
+                        <button type="submit" class="btn btn-enviar" ng-click="saveDataContacto(contacto, contactoForm)" ng-disabled="!(contacto.nombre) || !(contacto.apellido) || !(contacto.correo) || !(contacto.telefono) || !(contacto.empresa) || !(contacto.mensaje)">Enviar</button>
                     </div>
                 </form>
             </div>
