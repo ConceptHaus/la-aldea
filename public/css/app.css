@@ -10994,7 +10994,7 @@ footer .col-md-4 {
 .seccion-header .container-border {
   border-radius: 8px;
   border: solid 1.5px #a9a281;
-  height: 40vh;
+  height: 340px;
   position: relative;
   top: 170px;
   margin: auto;
@@ -11010,7 +11010,7 @@ footer .col-md-4 {
 .seccion-header .container-border p {
   line-height: 1.15;
   letter-spacing: 4.1px;
-  padding-top: 110px;
+  padding-top: 125px;
 }
 
 .header-servicios {
@@ -11212,6 +11212,10 @@ RESPONSIVE
 =============================*/
 
 @media (max-width: 991.98px) {
+  .nav {
+    margin-top: 35px;
+  }
+
   .btn-responsive {
     display: block !important;
   }
@@ -11295,19 +11299,22 @@ RESPONSIVE
   .container-info {
     width: 90%;
   }
+}
 
-  .seccion-header {
-    margin-bottom: 180px;
+@media screen and (max-width: 420px) {
+  .seccion-header .container-border h5 {
+    font-size: 14px;
+    padding-left: 5%;
   }
 }
 
-@media screen and (max-height: 320px) {
+@media screen and (max-width: 320px) {
   footer {
     background: yellow !important;
   }
 
-  .seccion-header {
-    margin-bottom: 100px;
+  .seccion-header .container-border h5 {
+    font-size: 10px;
   }
 }
 

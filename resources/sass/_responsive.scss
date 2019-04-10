@@ -5,7 +5,11 @@ RESPONSIVE
 =============================*/
 
 @include media-breakpoint-down(md) {
-    // Home
+    
+    // General
+    .nav {
+        margin-top: 35px;
+    }
     footer {
         // background: blue!important;
     }
@@ -124,17 +128,32 @@ RESPONSIVE
     //         margin-bottom: 5%;
     //     }
     // }
+    // .seccion-header {
+    //     margin-bottom: 180px;
+    // }
+}
+
+@media screen and (max-width: 420px) {
     .seccion-header {
-        margin-bottom: 180px;
+        .container-border {
+            h5 {
+                font-size: 14px;
+                padding-left: 5%;
+            }
+        }
     }
 }
 
-@media screen and (max-height: 320px) {
+@media screen and (max-width: 320px) {
     footer {
         background: yellow!important;
     }
     .seccion-header {
-        margin-bottom: 100px;
+        .container-border {
+            h5 {
+                font-size: 10px;
+            }
+        }
     }
 }
 

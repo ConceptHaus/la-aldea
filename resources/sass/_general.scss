@@ -135,7 +135,8 @@ footer {
     .container-border {
         border-radius: 8px;
         border: solid 1.5px $green;
-        height: 40vh;
+        // height: 40vh;
+        height: 340px;
         position: relative;
         top: 170px;
         margin: auto;
@@ -150,7 +151,7 @@ footer {
         p {
             line-height: 1.15;
             letter-spacing: 4.1px;
-            padding-top: 110px;
+            padding-top: 125px;
         }
     }
 }
