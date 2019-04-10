@@ -10712,6 +10712,10 @@ header .overlay {
   width: 560px;
 }
 
+.content-textos {
+  padding-top: 8rem !important;
+}
+
 .jumbotron {
   background: #FFF;
   margin-bottom: 0;
@@ -10722,7 +10726,7 @@ header .overlay {
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.5;
+  line-height: 2;
   letter-spacing: 4.5px;
   text-align: center;
   color: #898469 !important;
@@ -10757,6 +10761,7 @@ header .overlay {
 
 #contacto-home .texto2 {
   font-size: 12px;
+  font-style: italic;
   font-weight: 700;
 }
 
@@ -10801,7 +10806,7 @@ header .overlay {
 
 .container-pleca p {
   font-size: 18px;
-  line-height: 1.14;
+  line-height: 1.5;
   letter-spacing: 4px;
   margin: auto;
   width: 600px;
@@ -10921,6 +10926,7 @@ a:hover {
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 2px;
+  height: 40px;
 }
 
 .form-control::-webkit-input-placeholder {
