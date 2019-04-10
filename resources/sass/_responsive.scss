@@ -95,7 +95,7 @@ RESPONSIVE
 @include media-breakpoint-down(xs) {
     // Generales
     footer {
-        // background: green!important;
+        background: green!important;
     }
     .container-info {
         width: 90%;
@@ -108,3 +108,33 @@ RESPONSIVE
     //     }
     // }
 }
+
+@include media-breakpoint-down(xs) {
+    // Generales
+    footer {
+        background: green!important;
+    }
+    .container-info {
+        width: 90%;
+    }
+    // Servicios
+    // .container-servicios {
+    //     .servicio-imagen {
+    //         height: 100vh!important;
+    //         margin-bottom: 5%;
+    //     }
+    // }
+    .seccion-header {
+        margin-bottom: 180px;
+    }
+}
+
+@media screen and (max-height: 320px) {
+    footer {
+        background: yellow!important;
+    }
+    .seccion-header {
+        margin-bottom: 100px;
+    }
+}
+
