@@ -25,7 +25,7 @@
 
     <section id="contacto-home">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 overflow-hidden">
                 <img src="{{asset('img/elementos/elemento1.svg')}}" class="img-hoja img1" data-0="left: -20px; top: -150px;" data-500="left: 50px; top: -5px;">
                 <div class="content-contacto-left">
                     <div class="content-textos center-middle-table" data-300="opacity: 0;" data-700="opacity: 1;">
@@ -36,7 +36,7 @@
                 <img src="{{asset('img/elementos/elemento2.svg')}}" class="img-hoja img2" data-0="right: -30px; bottom: -150px;" data-700="right: 50px; bottom: -5px;">
             </div>
             <div class="col-md-6">
-                <form id="contactoForm" name="contactoForm" class="mt-3" data-300="opacity: 0;" data-700="opacity: 1;">
+                <form id="contactoForm" name="contactoForm" data-300="opacity: 0;" data-700="opacity: 1;">
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <input type="text" class="form-control" id="nombre" name="nombre" ng-model="contacto.nombre" placeholder="Nombre">

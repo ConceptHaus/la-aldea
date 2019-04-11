@@ -10891,6 +10891,10 @@ a:hover {
   color: #fff;
 }
 
+.bg-white {
+  background: #fff;
+}
+
 .btn-enviar {
   border-radius: 32px;
   padding: 7px 35px;
@@ -11123,7 +11127,7 @@ h1 span {
 #skrollr-body {
   float: left;
   width: 100%;
-  height: 100%;
+  height: 100% !important;
 }
 
 /* =============================
@@ -11242,6 +11246,15 @@ RESPONSIVE
 
   #contacto-home .content-contacto-left {
     width: 90% !important;
+  }
+
+  #contacto-home .content-textos {
+    padding-top: 60px !important;
+  }
+
+  #contacto-home .img-hoja.img1,
+  #contacto-home .img-hoja.img2 {
+    width: 100px;
   }
 
   #contacto-home form {

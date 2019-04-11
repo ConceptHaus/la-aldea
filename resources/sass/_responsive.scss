@@ -51,6 +51,13 @@ RESPONSIVE
         .content-contacto-left {
             width: 90%!important;
         }
+        .content-textos {
+            padding-top: 60px !important;
+        }
+        .img-hoja.img1,
+        .img-hoja.img2 {
+            width: 100px;
+        }
     }
     #contacto-home {
         form {
@@ -99,7 +106,7 @@ RESPONSIVE
 @include media-breakpoint-down(xs) {
     // Generales
     footer {
-        background: green!important;
+        // background: green!important;
     }
     .container-info {
         width: 90%;
@@ -116,7 +123,7 @@ RESPONSIVE
 @include media-breakpoint-down(xs) {
     // Generales
     footer {
-        background: green!important;
+        // background: green!important;
     }
     .container-info {
         width: 90%;
@@ -146,7 +153,7 @@ RESPONSIVE
 
 @media screen and (max-width: 320px) {
     footer {
-        background: yellow!important;
+        // background: yellow!important;
     }
     .seccion-header {
         .container-border {
