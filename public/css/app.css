@@ -11295,20 +11295,12 @@ RESPONSIVE
 }
 
 @media (max-width: 575.98px) {
-  footer {
-    background: green !important;
-  }
-
   .container-info {
     width: 90%;
   }
 }
 
 @media (max-width: 575.98px) {
-  footer {
-    background: green !important;
-  }
-
   .container-info {
     width: 90%;
   }
@@ -11322,10 +11314,6 @@ RESPONSIVE
 }
 
 @media screen and (max-width: 320px) {
-  footer {
-    background: yellow !important;
-  }
-
   .seccion-header .container-border h5 {
     font-size: 10px;
   }
