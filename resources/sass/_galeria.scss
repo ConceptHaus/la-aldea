@@ -11,10 +11,12 @@ GALERÍA
 .container-galeria-text {
     .text-experiencia {
         background: $container-green;
-        padding-top: 50vh !important;
+        // padding-top: 50vh !important;
+        padding-top: 80vh !important;
         position: relative;
         right: -70px;
-        margin-top: 23%;
+        // margin-top: 23%;
+        margin-top: 13%;
     }
 }
 
@@ -22,7 +24,7 @@ GALERÍA
 /* CAROUSEL */
 #carousel-custom {
     margin: 20px auto;
-    width: 90%;
+    width: 80%;
     .carousel-indicators {
         margin: 10px 0 0;
         overflow: auto;

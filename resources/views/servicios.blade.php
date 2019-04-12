@@ -1,7 +1,7 @@
 
 @extends('layouts.app')
 @section('content')
-    <section class="seccion-header header-servicios">
+    <section class="seccion-header header-servicios border-white">
         <div class="container h-100">
             <div class="container-border text-center">
                 <h5 class="color-white">SERVICIOS</h5>
@@ -24,8 +24,8 @@
         </div>
     </section>
 
-    <section class="container-pleca text-center py-5">
-        <p>Contamos con <span>paquetes todo incluido</span> y proveedores para todo tipo de eventos.</p>
+    <section class="container-pleca border-white text-center py-5">
+        <p>Contamos con <span class="span-bold">paquetes todo incluido</span> y proveedores para todo tipo de eventos.</p>
         <img src="{{asset('img/elementos/elemento2.svg')}}" class="img-hoja img2" data-0="right: -100px; bottom: -155px;" data-500="right: 50px; bottom: -25px;">
     </section>
 

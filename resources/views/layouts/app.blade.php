@@ -15,7 +15,6 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.11.4/sweetalert2.min.css">
     
-    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700" rel="stylesheet">
 </head>
 
 <body ng-app="app" id="skrollr-body">
@@ -31,7 +30,8 @@
         <img src="{{asset('img/isotipo-aldea.png')}}" class="img-isotipo mb-3" width="40">
     </div>
 
-    <ul class="nav justify-content-center wow slideInDown" data-wow-duration="1.5s">
+    <ul class="nav justify-content-center wow slideInDown">
+        <!-- data-wow-duration="1.5s" -->
         <!-- data-wow-delay="5s" -->
         <li class="nav-item nav-item-text">
             @if(Request::path() === '/')
@@ -130,7 +130,9 @@
     <!-- Skrollr - Animaciones -->
     <script type="text/javascript" src="{{asset('js/skrollr.min.js')}}"></script>
     <script type="text/javascript">
-	    var s = skrollr.init();
+	    var s = skrollr.init(
+            {smoothScrolling: false}
+        );
 	</script>
 
     <script>

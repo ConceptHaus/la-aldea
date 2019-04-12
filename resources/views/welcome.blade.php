@@ -1,7 +1,7 @@
 
 @extends('layouts.app')
 @section('content')
-    <header>
+    <header class="border-white">
         <div class="overlay"></div>
         <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
             <source src="{{asset('video/video-aldea.mp4')}}" type="video/mp4">
@@ -23,7 +23,7 @@
         </div>
     </section>
 
-    <section id="contacto-home">
+    <section id="contacto-home" class="border-white">
         <div class="row">
             <div class="col-md-6 overflow-hidden">
                 <img src="{{asset('img/elementos/elemento1.svg')}}" class="img-hoja img1" data-0="left: -20px; top: -150px;" data-500="left: 50px; top: -5px;">

@@ -1,0 +1,173 @@
+/* =============================
+
+HOME
+
+=============================*/
+
+header {
+    position: relative;
+    background-color: black;
+    min-height: 25rem;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+
+    video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: 0;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    .container {
+        position: relative;
+        top: 130px;
+        z-index: 2;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        // background: linear-gradient(rgba(78,75,54,1), rgba(47,45,44,0.1));
+        background: linear-gradient(#4E4B36, #2F2D2C);
+        // background-color: black;
+        opacity: .4;
+        z-index: 1;
+    }
+
+    .video-border {
+        height: 65vh;
+    }
+}
+
+.video-border {
+    border-radius: 8px;
+    border: solid 1.5px $green;
+    height: 40vh;
+    position: relative;
+    top: 35px;
+    margin: auto;
+    width: 85%;
+}
+
+.container-text {
+    width: 500px;
+}
+
+.container-text-big {
+    width: 560px;
+}
+
+.content-textos {
+    padding-top: 8rem !important;
+}
+
+.jumbotron {
+    background: #FFF;
+    margin-bottom: 0;
+}
+
+.text-principal {
+    font-size: 15px;
+    line-height: 2;
+    letter-spacing: 4.5px;
+    text-align: center;
+    color: $dark-green !important;
+
+    span {
+        font-family: "BaskervilleSemiBoldItalic", serif;
+    }
+}
+
+// CONTACTO 
+#contacto-home {
+    background: $container-green;
+    overflow: hidden;
+
+    .content-contacto-left {
+        display: table;
+        height: 370px;
+        margin: auto;
+        width: 500px;
+    }
+
+    .texto1,
+    .texto2 {
+        line-height: 1.5;
+        letter-spacing: 7px;
+    }
+
+    .texto1 {
+        font-size: 18px;
+    }
+
+    .texto2 {
+        font-family: "BaskervilleSemiBoldItalic", serif;
+        font-size: 14px;
+    }
+
+    form {
+        padding: 7%;
+
+        .btn-enviar {
+            border: solid 2px #efece2;
+            color: #efece2;
+        }
+
+        .form-control {
+            background: $container-green;
+        }
+    }
+}
+
+.descripcion-home {
+    overflow: hidden;
+}
+
+
+.img-hoja {
+    position: absolute;
+    width: 120px;
+}
+
+.img-hoja.img1 {
+    left: 50px;
+    top: -5px;
+}
+
+.img-hoja.img2 {
+    right: 50px;
+    bottom: -5px;
+}
+
+
+// PLECA
+.container-pleca {
+    background: $container-green;
+    position: relative;
+    overflow: hidden;
+
+    p {
+        font-size: 18px;
+        line-height: 1.5;
+        letter-spacing: 4px;
+        margin: auto;
+        width: 600px;
+    }
+
+    .img-hoja {
+        bottom: -25px;
+        width: 100px;
+    }
+}

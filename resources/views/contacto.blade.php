@@ -1,11 +1,11 @@
 @extends('layouts.app')
 @section('content')
 
-    <section class="seccion-header header-contacto">
+    <section class="seccion-header header-contacto border-white">
         <div class="container h-100">
             <div class="container-border text-center">
                 <h5 class="color-white">CONTACTO</h5>
-                <p>¿Te interesa? <br> Ponte en contacto con nosotros.</p>
+                <p>¿Te interesa? <br> Ponte en contacto con <span class="span-bold">nosotros</span>.</p>
             </div>
         </div>
     </section>
@@ -47,22 +47,21 @@
 
     </section>
 
-    <section class="seccion-mapa">
-        <iframe src="https://snazzymaps.com/embed/144411" width="100%" height="500px" style="border:none;"></iframe>
+    <section class="seccion-mapa border-white">
+        <iframe src="https://snazzymaps.com/embed/144411" width="100%" height="450px" style="border:none;"></iframe>
     </section>
 
     <section class="seccion-info-contacto jumbotron">
-
         <div class="row">
             <div class="col-sm-6 col-md-6 wow fadeInLeft" data-wow-duration="1.5s">
-                <div class="container-info">
+                <div class="container-info container-info-left float-right">
                     <img src="{{asset('img/iconos/ubication.gif')}}" class="mb-4" width="60"/>
                     <h6>UBICACIÓN</h6>
                     <p>Camino a Corralejo s/n Entre la deportiva y Cbtis. Cortazar, Gto.</p>
                 </div>
             </div>
             <div class="col-sm-6 col-md-6 wow fadeInRight" data-wow-duration="1.5s">
-                <div class="container-info">
+                <div class="container-info container-info-right float-left">
                     <img src="{{asset('img/iconos/phone.gif')}}" class="mb-4" width="60"/>
                     <h6>TELÉFONOS</h6>
                     <p class="mb-0"><a href="tel:+5539964541">(044)55-39-96-45-41</a></p>

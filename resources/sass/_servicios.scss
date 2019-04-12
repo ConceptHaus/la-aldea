@@ -1,0 +1,29 @@
+/* =============================
+
+SERVICIOS
+
+=============================*/
+.container-servicios {
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    .servicio-imagen {
+      background: url('../../public/img/elementos/img-servicios.png');
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    .servicio-descripcion {
+      h2 {
+        color: $light-green;
+        font-family: "BaskervilleSemiBold", serif;
+        font-size: 2.5rem;
+      }
+      p {
+        color: $darker-green;
+        font-size: 11px;
+        line-height: 1.5;
+        letter-spacing: 4px;
+      }
+    }
+} 

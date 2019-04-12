@@ -35,17 +35,26 @@ RESPONSIVE
     .seccion-contacto {
         width: 700px;
     }
+
+    // FOOTER
+    footer {
+        background: yellow;
+    }
 }
 
 @include media-breakpoint-down(sm) {
 
     // Generales
     footer {
-        // background: red!important;
+        background: red!important;
     }
     // Home
     header {
         height: 65vh;
+        .video-border {
+            height: 35vh;
+            width: 90%;
+        }
     }
     #contacto-home {
         .content-contacto-left {
@@ -89,6 +98,19 @@ RESPONSIVE
     .seccion-contacto {
         width: 90%;
     }
+    .seccion-info-contacto {
+        .container-info {
+            margin-bottom: 5%;
+            text-align: center;
+            width: 100%;
+        }
+        .container-info-left {
+            margin-right: initial!important;
+        }
+        .container-info-right {
+            margin-left: initial!important;
+        }
+    }
 
     // Footer
     footer {
@@ -106,7 +128,7 @@ RESPONSIVE
 @include media-breakpoint-down(xs) {
     // Generales
     footer {
-        // background: green!important;
+        background: green!important;
     }
     .container-info {
         width: 90%;
@@ -123,7 +145,7 @@ RESPONSIVE
 @include media-breakpoint-down(xs) {
     // Generales
     footer {
-        // background: green!important;
+        background: blue!important;
     }
     .container-info {
         width: 90%;

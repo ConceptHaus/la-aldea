@@ -9,19 +9,30 @@ CONTACTO
     width: 800px;
     .btn-enviar {
         background: $container-green;
+        font-family: "BaskervilleBold", serif;
         color: $dark-green;
     }
     .form-control {
         color: #a9a281;
-        font-style: normal;
+        font-family: "BaskervilleBold", serif;
     }
     .form-control-input {
         height: 50px;
     }
 }
 
-.container-info {
-    color: $dark-grey;
-    margin: auto;
-    width: 300px;
+.seccion-info-contacto {
+    h6 {
+        font-family: "BaskervilleSemiBold", serif;
+    }
+    .container-info {
+        color: $dark-grey;
+        width: 250px;
+    }
+    .container-info-left {
+        margin-right: 15%;
+    }
+    .container-info-right {
+        margin-left: 15%;
+    }
 }
