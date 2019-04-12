@@ -35,18 +35,13 @@ RESPONSIVE
     .seccion-contacto {
         width: 700px;
     }
-
-    // FOOTER
-    footer {
-        background: yellow;
-    }
 }
 
 @include media-breakpoint-down(sm) {
 
     // Generales
     footer {
-        background: red!important;
+        // background: red!important;
     }
     // Home
     header {
@@ -128,7 +123,7 @@ RESPONSIVE
 @include media-breakpoint-down(xs) {
     // Generales
     footer {
-        background: green!important;
+        // background: green!important;
     }
     .container-info {
         width: 90%;
@@ -145,7 +140,7 @@ RESPONSIVE
 @include media-breakpoint-down(xs) {
     // Generales
     footer {
-        background: blue!important;
+        // background: blue!important;
     }
     .container-info {
         width: 90%;

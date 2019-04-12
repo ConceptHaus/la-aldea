@@ -11307,17 +11307,9 @@ RESPONSIVE
   .seccion-contacto {
     width: 700px;
   }
-
-  footer {
-    background: yellow;
-  }
 }
 
 @media (max-width: 767.98px) {
-  footer {
-    background: red !important;
-  }
-
   header {
     height: 65vh;
   }
@@ -11392,20 +11384,12 @@ RESPONSIVE
 }
 
 @media (max-width: 575.98px) {
-  footer {
-    background: green !important;
-  }
-
   .container-info {
     width: 90%;
   }
 }
 
 @media (max-width: 575.98px) {
-  footer {
-    background: blue !important;
-  }
-
   .container-info {
     width: 90%;
   }
