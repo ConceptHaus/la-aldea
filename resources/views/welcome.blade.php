@@ -34,7 +34,7 @@
                 <img src="{{asset('img/elementos/elemento2.svg')}}" class="img-hoja img2" data-aos="fade-up-left" data-aos-easing="ease" data-aos-duration="2000">
             </div>
             <div class="col-md-6">
-                <form id="contactoForm" name="contactoForm" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1000">
+                <form id="contactoForm" name="contactoForm" data-aos="zoom-in">
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <input type="text" class="form-control" id="nombre" name="nombre" ng-model="contacto.nombre" placeholder="Nombre">

@@ -4,14 +4,22 @@ RESPONSIVE
 
 =============================*/
 
+
+@media screen and (max-width: 1200px) {
+    #carousel-custom {
+        width: 450px;
+    }
+    .container-box-carousel {
+        height: 390px;
+        margin-top: 60px;
+    }
+}
+
 @include media-breakpoint-down(md) {
     
     // General
     .nav {
         margin-top: 35px;
-    }
-    footer {
-        // background: blue!important;
     }
 
     // Generales
@@ -31,18 +39,27 @@ RESPONSIVE
         }
     }
 
+    .container-pleca p {
+        width: 400px!important;
+    } 
+
     // Contacto
     .seccion-contacto {
         width: 700px;
     }
+
+    // Footer
+    // footer {
+    //     background: pink!important;
+    // }
 }
 
 @include media-breakpoint-down(sm) {
 
     // Generales
-    footer {
-        // background: red!important;
-    }
+    // footer {
+    //     background: red!important;
+    // }
     // Home
     header {
         height: 65vh;
@@ -74,6 +91,7 @@ RESPONSIVE
         .text-experiencia {
             margin:auto;
             right: inherit;
+
             padding-top: 5vh !important;
             width: 90%;
         }
@@ -86,7 +104,25 @@ RESPONSIVE
 
     .container-text-big,
     .container-pleca p {
+        width: 80%!important;
+    }
+
+    .container-pleca {
+        margin-bottom: 0;
+        padding-bottom: 0!important;
+        .img-hoja {
+            position: relative;
+            right: 0;
+        }
+    }
+
+    #carousel-custom {
         width: 90%!important;
+    }
+
+    // Carousel
+    .container-box-carousel {
+        display: none;
     }
 
     // Contacto

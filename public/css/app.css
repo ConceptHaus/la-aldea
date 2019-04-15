@@ -11201,9 +11201,23 @@ GALERÍA
 
 /* CAROUSEL */
 
+.container-box-carousel {
+  background: #e2dcca;
+  position: absolute;
+  width: 90%;
+  height: 555px;
+  left: -67%;
+  margin-top: 60px;
+}
+
+.container-box-carousel .text-principal {
+  position: absolute;
+  bottom: 0;
+}
+
 #carousel-custom {
   margin: 20px auto;
-  width: 80%;
+  width: 610px;
 }
 
 #carousel-custom .carousel-indicators {
@@ -11226,7 +11240,6 @@ GALERÍA
 
 #carousel-custom .carousel-indicators li img {
   display: block;
-  width: 90px !important;
 }
 
 /* =============================
@@ -11278,6 +11291,17 @@ RESPONSIVE
 
 =============================*/
 
+@media screen and (max-width: 1200px) {
+  #carousel-custom {
+    width: 450px;
+  }
+
+  .container-box-carousel {
+    height: 390px;
+    margin-top: 60px;
+  }
+}
+
 @media (max-width: 991.98px) {
   .nav {
     margin-top: 35px;
@@ -11295,6 +11319,10 @@ RESPONSIVE
     height: 50vh !important;
     margin-bottom: 5%;
     margin-right: 5%;
+  }
+
+  .container-pleca p {
+    width: 400px !important;
   }
 
   .seccion-contacto {
@@ -11344,7 +11372,25 @@ RESPONSIVE
 
   .container-text-big,
   .container-pleca p {
+    width: 80% !important;
+  }
+
+  .container-pleca {
+    margin-bottom: 0;
+    padding-bottom: 0 !important;
+  }
+
+  .container-pleca .img-hoja {
+    position: relative;
+    right: 0;
+  }
+
+  #carousel-custom {
     width: 90% !important;
+  }
+
+  .container-box-carousel {
+    display: none;
   }
 
   .seccion-contacto {

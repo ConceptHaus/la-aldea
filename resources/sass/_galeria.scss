@@ -11,20 +11,30 @@ GALERÍA
 .container-galeria-text {
     .text-experiencia {
         background: $container-green;
-        // padding-top: 50vh !important;
         padding-top: 80vh !important;
         position: relative;
         right: -70px;
-        // margin-top: 23%;
         margin-top: 13%;
     }
 }
 
-
 /* CAROUSEL */
+.container-box-carousel {
+    background: $container-green;
+    position: absolute;
+    width: 90%;
+    height: 555px;
+    left: -67%;
+    margin-top: 60px;
+    .text-principal {
+        position: absolute;
+        bottom: 0;
+    }
+}
 #carousel-custom {
     margin: 20px auto;
-    width: 80%;
+    // width: 80%;
+    width: 610px;
     .carousel-indicators {
         margin: 10px 0 0;
         overflow: auto;
@@ -42,16 +52,6 @@ GALERÍA
             width: auto;
             img {
                 display: block;
-                // opacity: 0.5;
-                width: 90px !important;
-            }
-            &:active {
-                img {
-                    // opacity: 1;
-                }
-            }
-            &:hover {
-                // opacity: 0.75;
             }
         }
     }

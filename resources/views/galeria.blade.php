@@ -4,7 +4,7 @@
 <section class="seccion-header header-galeria border-white">
     <div class="container h-100">
         <div class="container-border text-center">
-            <h5 class="color-white">GALERÍA</h5>
+            <h5 class="color-white" data-aos="zoom-in-up" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="1000">GALERÍA</h5>
             <p><img src="{{asset('img/aldea.gif')}}" class="mb-3" width="30"></p>
         </div>
         
@@ -12,7 +12,7 @@
 </section>
 
 <section class="mt-5 pt-5">
-    <div class="container-text pl-5" data-0="opacity: 0.2; margin-left: -50%;" data-300="opacity: 1; margin-left: 0%;">
+    <div class="container-text pl-5" data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="800">
         <p class="lead text-muted text-principal text-left">
             Es el único lugar donde la naturaleza marca el diseño de cada rincón, por eso
             nos especializamos en crear escenarios para que ningún evento sea igual,
@@ -25,13 +25,17 @@
 <section class="container-galeria mb-sm-4 mb-md-5">
     <div class="row">
         <div class="col-md-5 p-0 container-galeria-text">
-            <div>
+            <!-- <div>
                 <p class="text-experiencia text-principal text-left p-3 pl-4">Vive una experiencia <br> <span>inigualable.</span></p>
-            </div>
+            </div> -->
         </div>
 
-        <div class="col-md-7 p-0" >
-            <div id='carousel-custom' class='carousel slide' data-ride='carousel' data-100="opacity: 0.2; margin-right: -120px;" data-300="opacity: 1; margin-right: 20px;">
+        <div class="col-md-7 p-0 container-carousel">
+
+            <div class="container-box-carousel" data-aos="fade-in" data-aos-duration="1000">
+                <p class="text-principal text-left p-3 pl-4">Vive una experiencia <br> <span>inigualable.</span></p>
+            </div>
+            <div id='carousel-custom' class='carousel slide' data-ride='carousel' data-aos="zoom-in-left" data-aos-easing="linear" data-aos-duration="800">
                 <div class='carousel-inner'>
                     <div class='carousel-item active'>
                         <img src="{{asset('img/galeria/1.jpg')}}" class="img-fluid" />
@@ -75,8 +79,9 @@
 
                 <!-- Indicators -->
                 <ol class='carousel-indicators'>
-                    <li data-target='#carousel-custom' data-slide-to='0' class='active'><img
-                            src="{{asset('img/galeria/1.jpg')}}" alt='' width="53"/></li>
+                    <li data-target='#carousel-custom' data-slide-to='0' class='active'>
+                        <img src="{{asset('img/galeria/1.jpg')}}" alt='' class="img-fluid"/>
+                    </li>
                     <li data-target='#carousel-custom' data-slide-to='1'><img src="{{asset('img/galeria/2.jpg')}}"
                         alt='' class="img-fluid" /></li>
                     <li data-target='#carousel-custom' data-slide-to='2'><img src="{{asset('img/galeria/3.jpg')}}"
