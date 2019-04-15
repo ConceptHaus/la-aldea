@@ -11,7 +11,8 @@
 
     <!-- CSS  -->
     <link href="{{asset('css/app.css')}}" rel="stylesheet" />
-    <link href="{{asset('css/animate.css')}}" rel="stylesheet" />
+    <!-- <link href="{{asset('css/animate.css')}}" rel="stylesheet" /> -->
+    <link href="{{asset('css/aos.css')}}" rel="stylesheet" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.11.4/sweetalert2.min.css">
     
@@ -123,17 +124,26 @@
     <script src="{{asset('js/angular-app/services/ContactoService.js')}}"></script>
 
     <!-- Wow - Animaciones -->
-    <script type="text/javascript" src="{{asset('js/wow.min.js')}}"></script>
+    <!-- <script type="text/javascript" src="{{asset('js/wow.min.js')}}"></script>
     <script>
         new WOW().init();
-    </script>
+    </script> -->
     <!-- Skrollr - Animaciones -->
-    <script type="text/javascript" src="{{asset('js/skrollr.min.js')}}"></script>
+    <!-- <script type="text/javascript" src="{{asset('js/skrollr.min.js')}}"></script>
     <script type="text/javascript">
 	    var s = skrollr.init(
             {smoothScrolling: false}
         );
-	</script>
+	</script> -->
+
+    <!-- AOS - Animaciones -->
+    <script type="text/javascript" src="{{asset('js/aos.js')}}"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            delay: 650,
+        });
+    </script>
 
     <script>
         function openNav() {
