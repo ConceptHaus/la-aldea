@@ -31,9 +31,8 @@
         <img src="{{asset('img/isotipo-aldea.png')}}" class="img-isotipo mb-3" width="40">
     </div>
 
-    <ul class="nav justify-content-center wow slideInDown">
-        <!-- data-wow-duration="1.5s" -->
-        <!-- data-wow-delay="5s" -->
+    <ul class="nav justify-content-center" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+
         <li class="nav-item nav-item-text">
             @if(Request::path() === '/')
                 <a class="nav-link active" href="{{url('/')}}">NOSOTROS</a>
@@ -139,9 +138,13 @@
     <!-- AOS - Animaciones -->
     <script type="text/javascript" src="{{asset('js/aos.js')}}"></script>
     <script>
+        // AOS.init({
+        //     offset: 200,
+        //     delay: 650,
+        // });
         AOS.init({
-            offset: 200,
-            delay: 650,
+            easing: 'ease-out-back',
+            duration: 1000
         });
     </script>
 

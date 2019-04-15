@@ -11,12 +11,10 @@
         </div>
     </header>
 
-    <section class="jumbotron descripcion-home text-center">
+    <section class="jumbotron descripcion-home text-center" >
         <div class="container container-text py-4">
             <img src="{{asset('img/aldea.gif')}}" class="mb-3" width="30">
-            <p class="lead text-muted text-principal" 
-                data-0="position: relative; opacity: 0.2; top: 20px;" 
-                data-300="position: relative; opacity: 1; top: 0px;">
+            <p class="lead text-muted text-principal" data-aos="zoom-in-up" data-aos-easing="linear" data-aos-duration="1000">
                 La Aldea fue creada pensando en lo que tú necesitas para hacer de tu evento una
                 <span>experiencia inigualable.</span>
             </p>
@@ -26,17 +24,17 @@
     <section id="contacto-home" class="border-white">
         <div class="row">
             <div class="col-md-6 overflow-hidden">
-                <img src="{{asset('img/elementos/elemento1.svg')}}" class="img-hoja img1" data-0="left: -20px; top: -150px;" data-500="left: 50px; top: -5px;">
-                <div class="content-contacto-left">
-                    <div class="content-textos center-middle-table" data-300="opacity: 0;" data-700="opacity: 1;">
+                <img src="{{asset('img/elementos/elemento1.svg')}}" class="img-hoja img1" data-aos="fade-down-right" data-aos-easing="ease" data-aos-duration="2000">
+                <div class="content-contacto-left" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
+                    <div class="content-textos center-middle-table">
                         <p class="texto1">¿Quieres más informes ó deseas alguna cotización? </p>
                         <p class="texto2">Escríbenos.</p>
                     </div>
                 </div>
-                <img src="{{asset('img/elementos/elemento2.svg')}}" class="img-hoja img2" data-0="right: -30px; bottom: -150px;" data-700="right: 50px; bottom: -5px;">
+                <img src="{{asset('img/elementos/elemento2.svg')}}" class="img-hoja img2" data-aos="fade-up-left" data-aos-easing="ease" data-aos-duration="2000">
             </div>
             <div class="col-md-6">
-                <form id="contactoForm" name="contactoForm" data-300="opacity: 0;" data-700="opacity: 1;">
+                <form id="contactoForm" name="contactoForm" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1000">
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <input type="text" class="form-control" id="nombre" name="nombre" ng-model="contacto.nombre" placeholder="Nombre">
