@@ -10710,7 +10710,6 @@ body {
   color: #898469;
   font-family: "BaskervilleRegular", serif;
   font-size: 15px;
-  height: 100vh !important;
 }
 
 a {
@@ -10982,12 +10981,6 @@ h1 span {
   to {
     width: 0;
   }
-}
-
-#skrollr-body {
-  float: left;
-  width: 100%;
-  height: 100% !important;
 }
 
 /* =============================
