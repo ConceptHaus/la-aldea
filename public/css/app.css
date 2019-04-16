@@ -10810,6 +10810,7 @@ a:hover {
   font-weight: 600;
   line-height: 1.05;
   letter-spacing: 7px;
+  text-align: center;
 }
 
 .nav-link:hover,
@@ -11357,11 +11358,20 @@ RESPONSIVE
     padding-top: 0px;
   }
 
+  .container-text-servicios .text-principal {
+    text-align: center !important;
+  }
+
   .container-galeria-text .text-experiencia {
     margin: auto;
     right: inherit;
     padding-top: 5vh !important;
     width: 90%;
+  }
+
+  .container-text-galeria .text-principal {
+    text-align: center !important;
+    padding-bottom: 2rem !important;
   }
 
   .container-text {
