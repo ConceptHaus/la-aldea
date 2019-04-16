@@ -11403,6 +11403,11 @@ RESPONSIVE
     width: 100%;
   }
 
+  .seccion-info-contacto .container-info .address {
+    margin: auto;
+    width: 70%;
+  }
+
   .seccion-info-contacto .container-info-left {
     margin-right: initial !important;
   }

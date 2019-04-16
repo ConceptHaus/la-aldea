@@ -53,15 +53,15 @@
 
     <section class="seccion-info-contacto jumbotron">
         <div class="row">
-            <div class="col-sm-6 col-md-6" data-aos="fade-right" data-aos-duration="1000">
-                <div class="container-info container-info-left float-right">
+            <div class="col-sm-6 col-md-6">
+                <div class="container-info container-info-left float-right" data-aos="fade-right" data-aos-duration="1000">
                     <img src="{{asset('img/iconos/ubication.gif')}}" class="mb-4" width="60"/>
                     <h6>UBICACIÓN</h6>
-                    <p>Camino a Corralejo s/n Entre la deportiva y Cbtis. Cortazar, Gto.</p>
+                    <p class="address">Camino a Corralejo s/n Entre la deportiva y Cbtis. Cortazar, Gto.</p>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-6" data-aos="fade-left" data-aos-duration="1000">
-                <div class="container-info container-info-right float-left">
+            <div class="col-sm-6 col-md-6">
+                <div class="container-info container-info-right float-left" data-aos="fade-left" data-aos-duration="1000">
                     <img src="{{asset('img/iconos/phone.gif')}}" class="mb-4" width="60"/>
                     <h6>TELÉFONOS</h6>
                     <p class="mb-0"><a href="tel:+5539964541">(044)55-39-96-45-41</a></p>
