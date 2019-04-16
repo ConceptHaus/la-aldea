@@ -86,6 +86,13 @@ RESPONSIVE
         }
     }
 
+    // Servicios
+    .container-text-servicios {
+        .text-principal {
+            text-align: center!important;
+        }
+    }
+
     // Galería
     .container-galeria-text {
         .text-experiencia {
@@ -94,6 +101,13 @@ RESPONSIVE
 
             padding-top: 5vh !important;
             width: 90%;
+        }
+    }
+
+    .container-text-galeria {
+        .text-principal {
+            text-align: center!important;
+            padding-bottom: 2rem !important;
         }
     }
     .container-text {

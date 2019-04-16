@@ -12,8 +12,8 @@
 </section>
 
 <section class="mt-5 pt-5">
-    <div class="container-text pl-5" data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="800">
-        <p class="lead text-muted text-principal text-left">
+    <div class="container-text container-text-galeria pl-5" data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="800">
+        <p class="lead text-muted text-principal text-left pt-3">
             Es el único lugar donde la naturaleza marca el diseño de cada rincón, por eso
             nos especializamos en crear escenarios para que ningún evento sea igual,
             convirtiéndolo en único e irrepetible.

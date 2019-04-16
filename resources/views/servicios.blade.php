@@ -11,7 +11,7 @@
     </section>
 
     <section class="jumbotron text-center">
-        <div class="container container-text-big">
+        <div class="container container-text-servicios container-text-big">
             <p class="lead text-muted text-principal text-justify" data-aos="zoom-in-up" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="1000">
                 La Aldea cuenta con jardines en <span>varios tamaños y áreas </span>
                 para cualquier tipo de evento, como bodas, XV 
