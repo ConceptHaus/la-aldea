@@ -56,7 +56,7 @@
             <div class="col-sm-6 col-md-6">
                 <div class="container-info container-info-left float-right" data-aos="fade-right" data-aos-duration="1000">
                     <img src="{{asset('img/iconos/ubication.gif')}}" class="mb-4" width="60"/>
-                    <h6>UBICACIÓN</h6>
+                    <h6>UBICACIÓN </h6>
                     <p class="address"><a href="https://www.google.com/maps/@20.492564,-100.968681,18z" target="_blank">Camino a Corralejo s/n Entre la deportiva y Cbtis. Cortazar, Gto.</a></p>
                 </div>
             </div>
