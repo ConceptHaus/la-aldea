@@ -15,7 +15,7 @@
     <link href="{{asset('css/aos.css')}}" rel="stylesheet" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.11.4/sweetalert2.min.css">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -115,7 +115,9 @@
     @if(Request::path() === 'gracias')
         </div>
     @endif
-
+    <a href="https://api.whatsapp.com/send?phone=5539964541&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20La%20Aldea." class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+    </a>
     <!-- JS -->
     <script type="text/javascript" src="{{asset('js/jquery-3.3.1.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('bootstrap/js/bootstrap.bundle.min.js')}}"></script>
@@ -135,7 +137,7 @@
     <script src="{{asset('js/angular-app/angular-app.js')}}"></script>
     <script src="{{asset('js/angular-app/controllers/ContactoController.js')}}"></script>
     <script src="{{asset('js/angular-app/services/ContactoService.js')}}"></script>
-
+    
     <!-- Wow - Animaciones -->
     <!-- <script type="text/javascript" src="{{asset('js/wow.min.js')}}"></script>
     <script>
