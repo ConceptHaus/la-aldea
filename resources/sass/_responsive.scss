@@ -16,7 +16,15 @@ RESPONSIVE
 }
 
 @include media-breakpoint-down(md) {
-    
+    .float {
+        width: 100% !important;
+        bottom: 0 !important;
+        right:0 !important;
+        
+        p{
+            margin-top:13px;
+        }
+    }
     // General
     .nav {
         margin-top: 35px;

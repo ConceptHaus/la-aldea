@@ -1,18 +1,106 @@
 .float {
     position: fixed;
-    width: 60px;
+    width: 150px;
     height: 60px;
-    bottom: 40px;
-    right: 40px;
-    background-color: #25d366;
-    color: #FFF;
-    border-radius: 50px;
+    bottom: 20%;
+    padding: 10px;
+    right:20px;
+    background-color: #e2dcca;
+    color: #898469;
     text-align: center;
-    font-size: 30px;
-    box-shadow: 2px 2px 3px #999;
+    font-size: 20px;
     z-index: 100;
 }
 
 .my-float {
     margin-top: 16px;
+}
+
+
+
+
+//Modal
+
+a {
+    color: #707070;
+    font-family: "BaskervilleRegular",
+    serif;
+
+    &:hover {
+        color: #707070;
+        font-weight: 400;
+    }
+}
+
+.modal.bottom .modal-dialog {
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    -webkit-transform: translate(0, 0%);
+    -ms-transform: translate(0, 0%);
+    -o-transform: translate(0, 0%);
+    transform: translate(0, 0%);
+
+    z-index: 1000;
+}
+
+.modal-header {
+    display: block;
+
+    .close-m {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    >p {
+        margin-bottom: 0%;
+    }
+}
+
+.modal-content {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    height: 100%;
+}
+
+.modal.bottom.fade .modal-dialog {
+    bottom: -320px;
+    -webkit-transition: opacity 0.3s linear, bottom 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s linear, bottom 0.3s ease-in-out;
+    -o-transition: opacity 0.3s linear, bottom 0.3s ease-in-out;
+    transition: opacity 0.3s linear, bottom 0.3s ease-in-out;
+}
+
+.modal.bottom.fade.show .modal-dialog {
+    bottom: 0;
+}
+
+.modal-title {
+    margin-bottom: 0;
+    color: #707070;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.icon-contacto {
+    max-width: 20px;
+    margin-right: 15px;
+
+}
+
+.wa {
+    max-width: 25px;
+}
+
+.col-12 {
+    font-size: 15px;
+    padding: 13px;
+    border-bottom: solid 1px #e9ecef;
+
+}
+
+.last {
+    border-bottom: none;
 }

@@ -115,9 +115,54 @@
     @if(Request::path() === 'gracias')
         </div>
     @endif
-    <a href="https://api.whatsapp.com/send?phone=5539964541&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20La%20Aldea." class="float" target="_blank">
-    <i class="fa fa-whatsapp my-float"></i>
-    </a>
+    <div data-target=".modal-contact" data-toggle="modal"  class="float" target="_blank">
+        <p class="text-center">Contáctanos</p>
+    </div>
+<div id="modal-contact" class="modal fade bottom modal-contact" tabindex="-1" role="dialog" aria-labelledby="ModalContactLabel"
+  aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h5 class="modal-title" id="exampleModalLabel">Contáctanos vía</h5>
+        <button type="button" class="close close-m" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                  <a href="https://api.whatsapp.com/send?phone=5539964541&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20La%20Aldea."
+                    target="_blank">
+                  <img class="img-fluid icon-contacto wa" 
+                    src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Whatsapp">(55) 3996 4541
+                  </a>
+                  </div>
+                  
+                <div class="col-12">
+                  <a href="https://m.me/456682224869554" target="_blank">
+                  <img class="img-fluid icon-contacto"
+                    src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Facebook_Messenger_logo.svg" alt="Messenger">Messenger
+                  </a>
+                </div>
+                <div class="col-12">
+                  <a href="tel:5539964541">
+                  <img class="img-fluid icon-contacto" 
+                    src="https://kiper.app/assets/img/iconos/call.svg" alt="Telefono">(55) 3996 4541
+                  </a>
+                </div>
+                <div class="col-12 last">
+                  <a href="/contacto">
+                  <img class="img-fluid icon-contacto" 
+                    src="https://kiper.app/assets/img/iconos/mail.svg" alt="Correo electrónico">Correo
+                  </a>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
     <!-- JS -->
     <script type="text/javascript" src="{{asset('js/jquery-3.3.1.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('bootstrap/js/bootstrap.bundle.min.js')}}"></script>
