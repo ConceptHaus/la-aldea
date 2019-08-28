@@ -132,7 +132,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
-                  <a href="https://api.whatsapp.com/send?phone=5539964541&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20La%20Aldea."
+                  <a href="https://api.whatsapp.com/send?phone=+525539964541&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20La%20Aldea."
                     target="_blank">
                   <img class="img-fluid icon-contacto wa" 
                     src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Whatsapp">(55) 3996 4541
@@ -146,7 +146,7 @@
                   </a>
                 </div>
                 <div class="col-12">
-                  <a href="tel:5539964541">
+                  <a href="tel:+52">
                   <img class="img-fluid icon-contacto" 
                     src="https://kiper.app/assets/img/iconos/call.svg" alt="Telefono">(55) 3996 4541
                   </a>
