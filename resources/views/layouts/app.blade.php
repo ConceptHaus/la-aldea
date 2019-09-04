@@ -146,7 +146,7 @@
                   </a>
                 </div>
                 <div class="col-12">
-                  <a href="tel:+5539964541">
+                  <a href="tel:+5573377790">
                   <img class="img-fluid icon-contacto" 
                     src="https://kiper.app/assets/img/iconos/call.svg" alt="Telefono">(55) 3996 4541
                   </a>
