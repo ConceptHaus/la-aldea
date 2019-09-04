@@ -115,9 +115,9 @@
     @if(Request::path() === 'gracias')
         </div>
     @endif
-    <div data-target=".modal-contact" data-toggle="modal"  class="float" target="_blank">
+    <a href="#" data-target=".modal-contact" data-toggle="modal"  class="float" target="_blank">
         <p class="text-center">Contáctanos</p>
-    </div>
+    </a>
 <div id="modal-contact" class="modal fade bottom modal-contact" tabindex="-1" role="dialog" aria-labelledby="ModalContactLabel"
   aria-hidden="true">
   <div class="modal-dialog">
