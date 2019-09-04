@@ -140,13 +140,13 @@
                   </div>
                   
                 <div class="col-12">
-                  <a href="https://m.me/456682224869554" target="_blank">
+                  <a href="https://m.me/laaldeajardines" target="_blank">
                   <img class="img-fluid icon-contacto"
                     src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Facebook_Messenger_logo.svg" alt="Messenger">Messenger
                   </a>
                 </div>
                 <div class="col-12">
-                  <a href="tel:+52">
+                  <a href="tel:+5539964541">
                   <img class="img-fluid icon-contacto" 
                     src="https://kiper.app/assets/img/iconos/call.svg" alt="Telefono">(55) 3996 4541
                   </a>
