@@ -131,13 +131,13 @@
       <div class="modal-body">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12">
+                {{-- <div class="col-12">
                   <a href="https://api.whatsapp.com/send?phone=+525539964541&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20La%20Aldea."
                     target="_blank">
                   <img class="img-fluid icon-contacto wa" 
                     src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Whatsapp">(55) 3996 4541
                   </a>
-                  </div>
+                  </div> --}}
                   
                 <div class="col-12">
                   <a href="https://m.me/laaldeajardines" target="_blank">
@@ -145,12 +145,12 @@
                     src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Facebook_Messenger_logo.svg" alt="Messenger">Messenger
                   </a>
                 </div>
-                <div class="col-12">
+                {{-- <div class="col-12">
                   <a href="tel:+525539964541">
                   <img class="img-fluid icon-contacto" 
                     src="https://kiper.app/assets/img/iconos/call.svg" alt="Telefono">(55) 3996 4541
                   </a>
-                </div>
+                </div> --}}
                 <div class="col-12 last">
                   <a href="/contacto">
                   <img class="img-fluid icon-contacto" 

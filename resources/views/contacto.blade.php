@@ -60,14 +60,14 @@
                     <p class="address"><a href="https://www.google.com/maps/@20.492564,-100.968681,18z" target="_blank">Camino a Corralejo s/n Entre la deportiva y Cbtis. Cortazar, Gto.</a></p>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-6">
+            {{-- <div class="col-sm-6 col-md-6">
                 <div class="container-info container-info-right float-left" data-aos="fade-left" data-aos-duration="1000">
                     <img src="{{asset('img/iconos/phone.gif')}}" class="mb-4" width="60"/>
                     <h6>TELÉFONOS</h6>
                     <p class="mb-0"><a href="tel:+5539964541">(044)55-39-96-45-41</a></p>
                     <p class=""><a href="tel:+5533995110">(044)55-33-99-51-10</a></p>    
                 </div>
-            </div>
+            </div> --}}
         </div>
     </section>
 @endsection
