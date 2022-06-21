@@ -27,7 +27,7 @@ define( 'DB_NAME', 'la4ld342022' );
 define( 'DB_USER', 'forge' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', 'ipJlBz5ays4ho80oULXY' );
+define( 'DB_PASSWORD', 'nZknsgXYsLYCzjkrF8fo' );
 
 /** MySQL hostname */
 define( 'DB_HOST', 'localhost' );
